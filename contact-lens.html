@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンタクトレンズ処方 - レインボー眼科</title>
+    <meta name="description" content="レインボー眼科のコンタクトレンズ処方案内ページです。初めての方からリピーターの方まで、安全で快適なコンタクトレンズライフをサポートいたします。">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-lens-section {
+            padding: 2rem 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .lens-info-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .lens-type-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .lens-type-card h4 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-light);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .important-notice {
+            background: #fff3f3;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .process-step {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .step-number {
+            background: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .brand-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-announcement-bar" role="alert" aria-live="assertive">
+        <div class="container">
+            <div class="bar-content">
+                <span class="bar-text"><i class="fas fa-bell"></i> <strong>休診のお知らせ：</strong> 8月9日(土)〜8月17日(日) 夏季休診（<em>8月15日(金)は予約検査のみ</em>）・9月22日(月) 休診</span>
+            </div>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="header-info">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="imgs/new_logo.png" alt="レインボー眼科" class="logo-image">
+                    </a>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-details">
+                        <div class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            東京都東村山市栄町1-4-26 久米川メディカルビル 5階
+                        </div>
+                        <div class="hours">
+                            <i class="fas fa-clock"></i>
+                            8:30〜12:30/15:00〜17:30
+                        </div>
+                        <p class="closed-days">休診日 土･日･祝及び火・水・金の午後</p>
+                    </div>
+                    <a href="tel:042-398-5331" class="contact-tel">
+                        <p class="tel-text">お電話はこちら</p>
+                        <p class="tel-number">
+                            <i class="fas fa-phone"></i>
+                            042-398-5331
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <button class="mobile-menu-toggle" aria-label="メニュー" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">当院について <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="rooms.html">施設案内</a>
+                                <a href="doctor.html">院長紹介</a>
+                                <a href="access.html">アクセス</a>
+                            </div>
+                        </li>
+                        <li><a href="about.html">診療時間</a></li>
+                        <li class="dropdown active">
+                            <a href="javascript:void(0)" class="dropbtn">患者様へ <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="faq.html">よくある質問</a>
+                                <a href="contact-lens.html">コンタクト処方</a>
+                            </div>
+                        </li>
+                        <li><a href="careers.html">採用情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>コンタクトレンズ処方</h2>
+            </div>
+        </section>
+
+        <section class="contact-lens-section">
+            <div class="container">
+                <div class="lens-info-box">
+                    <h3 class="section-title">受付時間</h3>
+                    <div class="table-responsive">
+                    <table class="opening-hours">
+                        <thead>
+                            <tr>
+                                <th>受付時間</th>
+                                <th>月</th>
+                                <th>火</th>
+                                <th>水</th>
+                                <th>木</th>
+                                <th>金</th>
+                                <th>土</th>
+                                <th>日/祝</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>午前 8:20～11:00</th>
+                                <td><i class="fas fa-circle"></i></td>
+                                <td><i class="fas fa-circle"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-circle"></i></td>
+                                <td><i class="fas fa-circle"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <th>午後 2:50～4:30</th>
+                                <td><i class="fas fa-circle"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-circle"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <p class="notice">※月・木曜午前は受付終了時間が早まることがあります。<br>
+                    ※毎週水曜日はコンタクトレンズ検査・処方の受付はありません。</p>
+                </div>
+
+                <div class="lens-info-box">
+                    <h3 class="section-title">コンタクトレンズ処方の流れ</h3>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>診察・検査</h4>
+                                <p>すべての方に一般的な眼科的検査と診察を実施します。眼疾患がある場合は治療を優先する場合があります。</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>初めての方の場合</h4>
+                                <p><strong>使い捨てレンズ：</strong></p>
+                                <ul>
+                                    <li>初回：検査・装用練習を行い、テストレンズをお持ち帰り</li>
+                                    <li>2回目：検査・診察で問題なければ処方箋発行</li>
+                                </ul>
+                                <p><strong>通年性レンズ：</strong></p>
+                                <ul>
+                                    <li>初回に処方箋発行・装用練習を実施</li>
+                                    <li>購入・受け取り後2週間以内に再診察が必要</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>処方箋発行</h4>
+                                <p>検査結果に基づき、最適なレンズを処方いたします。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lens-info-box">
+                    <h3 class="section-title">取り扱いレンズ</h3>
+                    <div class="brand-list">
+                        <div class="lens-type-card">
+                            <h4>1日使い捨て（ソフトレンズ）</h4>
+                            <ul>
+                                <li>ジョンソン＆ジョンソン
+                                    <ul>
+                                        <li>ワンデーアキュビューモイスト</li>
+                                        <li>ワンデーアキュビューオアシス</li>
+                                        <li>ワンデーアキュビューディファインモイスト</li>
+                                        <li>ワンデーアキュビューモイスト乱視用</li>
+                                    </ul>
+                                </li>
+                                <li>シード
+                                    <ul>
+                                        <li>ワンデーファインUVプラス</li>
+                                        <li>ワンデーピュアビューサポート</li>
+                                    </ul>
+                                </li>
+                                <li>ボシュロム
+                                    <ul>
+                                        <li>アクアロックスワンデーUVシン</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lens-type-card">
+                            <h4>2週間使い捨て（ソフトレンズ）</h4>
+                            <ul>
+                                <li>ジョンソン＆ジョンソン：アキュビューオアシス</li>
+                                <li>シード：2ウイークピュアうるおいプラス</li>
+                                <li>ボシュロム：
+                                    <ul>
+                                        <li>アクアロックス</li>
+                                        <li>メダリストプラス</li>
+                                        <li>メダリストプラス66トーリック乱視用</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lens-type-card">
+                            <h4>通年性レンズ</h4>
+                            <ul>
+                                <li>ソフトレンズ：シード クララソフトファシル14</li>
+                                <li>ハードレンズ
+                                    <ul>
+                                        <li>シード：UV-1、AS-LUNA</li>
+                                        <li>ボシュロム：EX-O2</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lens-type-card">
+                            <h4>遠近両用</h4>
+                            <ul>
+                                <li>ジョンソン＆ジョンソン：ワンデーアキュビューモイストマルチフォーカル</li>
+                                <li>シード：
+                                    <ul>
+                                        <li>ワンデーピュアEDOF</li>
+                                        <li>2ウイークピュアマルチステージ</li>
+                                    </ul>
+                                </li>
+                                <li>ボシュロム：メダリストマルチフォーカル2ウイーク</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-notice">
+                    <h3>重要な注意事項</h3>
+                    <ul>
+                        <li>当院で取り扱いのないコンタクトレンズの処方箋は発行できません</li>
+                        <li>当院で処方が初めての方、レンズの種類変更希望の方は早めの時間にご来院ください</li>
+                        <li>コンタクトレンズの処方は同日1種類とさせていただきます</li>
+                        <li>眼鏡と現在使用中のコンタクトレンズ度数がわかるものをご持参ください</li>
+                        <li>中学生以下の方は、処方箋発行時に保護者のサインが必要です</li>
+                        <li>装用練習は初回30分以内を目安に行います。習得できない場合や不安がある場合は後日の来院をお願いすることがあります</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 レインボー眼科。無断複写・転載を禁じます。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医院案内 - レインボー眼科</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top-announcement-bar" role="alert" aria-live="assertive">
+        <div class="container">
+            <div class="bar-content">
+                <span class="bar-text"><i class="fas fa-bell"></i> <strong>休診のお知らせ：</strong> 8月9日(土)〜8月17日(日) 夏季休診（<em>8月15日(金)は予約検査のみ</em>）・9月22日(月) 休診</span>
+            </div>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="header-info">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="imgs/new_logo.png" alt="レインボー眼科" class="logo-image">
+                    </a>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-details">
+                        <div class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            東京都東村山市栄町1-4-26 久米川メディカルビル 5階
+                        </div>
+                        <div class="hours">
+                            <i class="fas fa-clock"></i>
+                            8:30〜12:30/15:00〜17:30
+                        </div>
+                        <p class="closed-days">休診日 土･日･祝及び火・水・金の午後</p>
+                    </div>
+                    <a href="tel:042-398-5331" class="contact-tel">
+                        <p class="tel-text">お電話はこちら</p>
+                        <p class="tel-number">
+                            <i class="fas fa-phone"></i>
+                            042-398-5331
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <button class="mobile-menu-toggle" aria-label="メニュー" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li class="dropdown active">
+                            <a href="javascript:void(0)" class="dropbtn">当院について <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="rooms.html">施設案内</a>
+                                <a href="doctor.html">院長紹介</a>
+                                <a href="access.html">アクセス</a>
+                            </div>
+                        </li>
+                        <li><a href="about.html">診療時間</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">患者様へ <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="faq.html">よくある質問</a>
+                                <a href="contact-lens.html">コンタクト処方</a>
+                            </div>
+                        </li>
+                        <li><a href="careers.html">採用情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>医院案内</h2>
+                <p class="photo-notice">画像をクリックすると大きい画像でご覧いただけます</p>
+            </div>
+        </section>
+
+        <section class="clinic-facilities">
+            <div class="container">
+                <h3>施設・設備のご案内</h3>
+                <div class="facility-grid">
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/machiai.jpg" data-lightbox="clinic-photos" data-title="受付・待合室：明るく清潔な待合室で、ゆったりとお待ちいただけます。">
+                                <img src="imgs/machiai.jpg" alt="受付・待合室">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>受付・待合室</h4>
+                            <p>明るく清潔な待合室で、ゆったりとお待ちいただけます。</p>
+                        </div>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/inchou.jpg" data-lightbox="clinic-photos" data-title="院長診察室：丁寧な診察と分かりやすい説明を心がけています。">
+                                <img src="imgs/inchou.jpg" alt="院長診察室">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>院長診察室</h4>
+                            <p>丁寧な診察と分かりやすい説明を心がけています。</p>
+                        </div>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/shochi.jpg" data-lightbox="clinic-photos" data-title="処置室：清潔で安全な環境で処置を行います。">
+                                <img src="imgs/shochi.jpg" alt="処置室">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>処置室</h4>
+                            <p>清潔で安全な環境で処置を行います。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-grid">
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/shinsatsu.jpg" data-lightbox="clinic-photos" data-title="視力検査室：正確な視力測定を行います。">
+                                <img src="imgs/shinsatsu.jpg" alt="視力検査室">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>視力検査室</h4>
+                            <p>正確な視力測定を行います。</p>
+                        </div>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/perimeter.jpg" data-lightbox="clinic-photos" data-title="視野検査室：緑内障などの診断に重要な視野検査を行います。">
+                                <img src="imgs/perimeter.jpg" alt="視野計">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>視野検査室</h4>
+                            <p>緑内障などの診断に重要な視野検査を行います。</p>
+                        </div>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/kensa.jpg" data-lightbox="clinic-photos" data-title="OCT検査装置：網膜の断層撮影が可能な最新の検査機器です。">
+                                <img src="imgs/kensa.jpg" alt="OCT検査装置">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>OCT検査装置</h4>
+                            <p>網膜の断層撮影が可能な最新の検査機器です。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-grid">
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/contact.jpg" data-lightbox="clinic-photos" data-title="コンタクトレンズ装着コーナー：清潔な環境でコンタクトレンズの装着ができます。">
+                                <img src="imgs/contact.jpg" alt="コンタクトレンズ装着コーナー">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>コンタクトレンズ装着コーナー</h4>
+                            <p>清潔な環境でコンタクトレンズの装着ができます。</p>
+                        </div>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-image">
+                            <a href="imgs/kids.jpg" data-lightbox="clinic-photos" data-title="キッズコーナー：お子様連れの方も安心してお過ごしいただけます。">
+                                <img src="imgs/kids.jpg" alt="キッズコーナー">
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h4>キッズコーナー</h4>
+                            <p>お子様連れの方も安心してお過ごしいただけます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 レインボー眼科。無断複写・転載を禁じます。</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>採用情報 - レインボー眼科</title>
+    <meta name="description" content="レインボー眼科の採用情報ページです。医療に携わる意欲的な人材を募集しています。">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .careers-section {
+            padding: 60px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .requirements {
+            background: #f5f5f5;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .requirements h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .requirements li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .requirements li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .application-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #2980b9;
+        }
+        .file-input {
+            border: 2px dashed #ddd;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .required {
+            color: #e74c3c;
+            margin-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-announcement-bar" role="alert" aria-live="assertive">
+        <div class="container">
+            <div class="bar-content">
+                <span class="bar-text"><i class="fas fa-bell"></i> <strong>休診のお知らせ：</strong> 8月9日(土)〜8月17日(日) 夏季休診（<em>8月15日(金)は予約検査のみ</em>）・9月22日(月) 休診</span>
+            </div>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="header-info">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="imgs/new_logo.png" alt="レインボー眼科" class="logo-image">
+                    </a>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-details">
+                        <div class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            東京都東村山市栄町1-4-26 久米川メディカルビル 5階
+                        </div>
+                        <div class="hours">
+                            <i class="fas fa-clock"></i>
+                            8:30〜12:30/15:00〜17:30
+                        </div>
+                        <p class="closed-days">休診日 土･日･祝及び火・水・金の午後</p>
+                    </div>
+                    <a href="tel:042-398-5331" class="contact-tel">
+                        <p class="tel-text">お電話はこちら</p>
+                        <p class="tel-number">
+                            <i class="fas fa-phone"></i>
+                            042-398-5331
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <button class="mobile-menu-toggle" aria-label="メニュー" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">当院について <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="rooms.html">施設案内</a>
+                                <a href="doctor.html">院長紹介</a>
+                                <a href="access.html">アクセス</a>
+                            </div>
+                        </li>
+                        <li><a href="about.html">診療時間</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">患者様へ <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="faq.html">よくある質問</a>
+                                <a href="contact-lens.html">コンタクト処方</a>
+                            </div>
+                        </li>
+                        <li class="active"><a href="careers.html">採用情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="careers-section">
+            <h2>採用情報</h2>
+            <p>レインボー眼科では、患者様に最高の医療サービスを提供するため、意欲的な人材を募集しています。</p>
+            
+            <div class="requirements">
+                <h3>応募要件</h3>
+                <ul>
+                    <li>医療に対する強い関心と情熱をお持ちの方</li>
+                    <li>チームワークを大切にし、協調性のある方</li>
+                    <li>患者様に寄り添った対応ができる方</li>
+                    <li>向上心を持って業務に取り組める方</li>
+                    <li>必要な資格をお持ちの方（職種による）</li>
+                </ul>
+            </div>
+
+            <div class="application-form">
+                <h3>応募フォーム</h3>
+                <form id="careers-form" method="POST">
+                    <div class="form-group">
+                        <label>お名前<span class="required">*</span></label>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>メールアドレス<span class="required">*</span></label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>電話番号<span class="required">*</span></label>
+                        <input type="tel" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>希望職種<span class="required">*</span></label>
+                        <input type="text" name="position" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>志望動機<span class="required">*</span></label>
+                        <textarea name="motivation" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>履歴書（PDF形式）<span class="required">*</span></label>
+                        <input type="file" name="resume" accept=".pdf" required class="file-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label>職務経歴書（PDF形式）</label>
+                        <input type="file" name="cv" accept=".pdf" class="file-input">
+                    </div>
+
+                    <button type="submit" class="submit-btn">応募する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 レインボー眼科。無断複写・転載を禁じます。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
