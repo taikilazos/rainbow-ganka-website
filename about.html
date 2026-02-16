@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>診療時間・休診のお知らせ - レインボー眼科</title>
+    <title>診療内容 - レインボー眼科</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <div class="top-announcement-bar" role="alert" aria-live="assertive">
         <div class="container">
             <div class="bar-content">
-                <span class="bar-text"><i class="fas fa-bell"></i> <strong>休診のお知らせ：</strong> 8月9日(土)〜8月17日(日) 夏季休診（<em>8月15日(金)は予約検査のみ</em>）・9月22日(月) 休診</span>
+                <span class="bar-text"><i class="fas fa-bell"></i> <strong>お知らせ：</strong> 受診時はマイナ保険証または資格確認書をご持参ください。</span>
             </div>
         </div>
     </div>
@@ -54,15 +54,15 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">ホーム</a></li>
+                        <li class="active"><a href="about.html">診療内容</a></li>
                         <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">当院について <i class="fas fa-chevron-down"></i></a>
+                            <a href="javascript:void(0)" class="dropbtn">当院のご案内 <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown-content">
                                 <a href="rooms.html">施設案内</a>
                                 <a href="doctor.html">院長紹介</a>
                                 <a href="access.html">アクセス</a>
                             </div>
                         </li>
-                        <li class="active"><a href="about.html">診療時間</a></li>
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="dropbtn">患者様へ <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown-content">
@@ -78,66 +78,28 @@
     </header>
 
     <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>診療内容</h2>
+            </div>
+        </section>
+
         <section class="clinic-hours">
             <div class="container">
-                <h2 class="section-title">診療時間</h2>
-                <div class="table-responsive">
-                <table class="opening-hours">
-                    <thead>
-                        <tr>
-                            <th>診療時間</th>
-                            <th>月</th>
-                            <th>火</th>
-                            <th>水</th>
-                            <th>木</th>
-                            <th>金</th>
-                            <th>土</th>
-                            <th>日/祝</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>午前 8:30～12:30</th>
-                            <td><i class="fas fa-circle"></i></td>
-                            <td><i class="fas fa-circle"></i></td>
-                            <td><i class="fas fa-circle"></i></td>
-                            <td><i class="fas fa-circle"></i></td>
-                            <td><i class="fas fa-circle"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                        </tr>
-                        <tr>
-                            <th>午後 3:00～5:30</th>
-                            <td><i class="fas fa-circle"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-circle"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-
-                <h2 class="section-title">臨時休診日のお知らせ</h2>
+                <h2 class="section-title">診療内容</h2>
                 <ul class="info-list">
-                    <li class="highlight">9月22日(月) 休診</li>
-                    <li class="highlight">8月9日(土)〜8月17日(日) 夏季休診</li>
+                    <li>☆ 結膜炎、角膜炎、ものもらい、白内障、緑内障、ドライアイなどの一般眼科</li>
+                    <li>☆ ブドウ膜炎、糖尿病網膜症、網膜剥離、黄斑変性などの眼底疾患</li>
+                    <li>☆ 糖尿病網膜症、眼底出血、網膜裂孔などに対するレーザー治療</li>
+                    <li>☆ 眼鏡・コンタクトレンズ処方箋発行（販売は行ってません）・定期検査</li>
                 </ul>
 
-                <h2 class="section-title">診療時間変更のお知らせ</h2>
+                <h2 class="section-title">医療DX推進のための取り組み</h2>
                 <ul class="info-list">
-                    <li>月曜日と木曜日は午前外来の受付終了時間が当日の状況で早まることがあります。ご了承ください。</li>
-                    <li>コンタクトレンズ検査受付時間変更についてはコンタクトレンズのページをご覧ください。</li>
-                </ul>
-
-                <h2 class="section-title">受付終了時間について</h2>
-                <ul class="info-list">
-                    <li>☆一般受付は診療終了時間10分前、午前は12時20分まで、午後(月・木)は5時20分までとなります。</li>
-                    <li>☆月・木曜午前は受付終了時間が早まることがあります。</li>
-                    <li>☆コンタクトレンズ検査についてはコンタクトレンズのページをご覧ください。</li>
-                    <li>☆精密眼底検査(散瞳剤使用)をご希望の方は午前は10時30分、午後は4時30分までにご来院ください。お時間がかかること、検査後もしばらくぼやけることをご了承願います。自らの運転(自動車、バイク、自転車など)でのご来院はご遠慮ください。</li>
+                    <li>オンライン資格確認等システムにより取得した診療情報を活用して診療を実施しています。</li>
+                    <li>マイナ保険証の利用促進など、医療DXを通じて質の高い医療を提供できるよう取り組んでいます。</li>
+                    <li>電子カルテ情報共有サービスの導入検討など、医療DXにかかる取り組みを実施しています。</li>
+                    <li>受診歴・薬剤情報・特定健診情報等を取得・活用して診療を行っています。</li>
                 </ul>
             </div>
         </section>
@@ -145,7 +107,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 レインボー眼科。無断複写・転載を禁じます。</p>
+            <p>© 2025 レインボー眼科。無断複写・転載を禁じます。</p>
         </div>
     </footer>
 
