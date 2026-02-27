@@ -1,72 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Top announcement bar now lives in HTML for easy enable/disable
-    // Slideshow functionality
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.slide-dot');
-    const prevButton = document.querySelector('.slide-nav-arrow.prev');
-    const nextButton = document.querySelector('.slide-nav-arrow.next');
-    let currentSlide = 0;
-    let slideInterval;
-
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        // Guard: only update dots if they exist
-        if (dots.length > 0) {
-            dots.forEach(dot => dot.classList.remove('active'));
-        }
-        
-        slides[index].classList.add('active');
-        if (dots.length > 0 && dots[index]) {
-            dots[index].classList.add('active');
-        }
-        currentSlide = index;
-    }
-
-    function nextSlide() {
-        let nextIndex = (currentSlide + 1) % slides.length;
-        showSlide(nextIndex);
-    }
-
-    function prevSlide() {
-        let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(prevIndex);
-    }
-
-    // Add click events to dots (only if present)
-    if (dots.length > 0) {
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                showSlide(index);
-                resetInterval();
-            });
-        });
-    }
-
-    // Add click events to arrows
-    if (prevButton && nextButton && slides.length > 1) {
-        prevButton.addEventListener('click', () => {
-            prevSlide();
-            resetInterval();
-        });
-
-        nextButton.addEventListener('click', () => {
-            nextSlide();
-            resetInterval();
-        });
-    }
-
-    function resetInterval() {
-        if (slides.length > 1) {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(nextSlide, 5000);
-        }
-    }
-
-    // Start slideshow if there are slides
-    if (slides.length > 1) {
-        slideInterval = setInterval(nextSlide, 5000);
-    }
-
     // Smooth scroll for navigation links
     document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -78,42 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
-    });
-
-    // Form submission handling
-    const contactForm = document.querySelector('form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('メッセージありがとうございます！');
-            this.reset();
-        });
-    }
-
-    // Header scroll behavior
-    let lastScroll = 0;
-    const mainHeader = document.querySelector('.main-header');
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll <= 0) {
-            mainHeader?.classList.remove('scrolled');
-            mainHeader?.classList.remove('scroll-up');
-            return;
-        }
-
-        if (currentScroll > lastScroll && !mainHeader?.classList.contains('scrolled')) {
-            // Scrolling down
-            mainHeader?.classList.add('scrolled');
-            mainHeader?.classList.remove('scroll-up');
-        } else if (currentScroll < lastScroll && mainHeader?.classList.contains('scrolled')) {
-            // Scrolling up
-            mainHeader?.classList.remove('scrolled');
-            mainHeader?.classList.add('scroll-up');
-        }
-        
-        lastScroll = currentScroll;
     });
 
     // FAQ functionality
