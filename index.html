@@ -1,211 +1,252 @@
-<!DOCTYPE html>
-<html lang="ja">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>レインボー眼科</title>
-    <meta name="description" content="地域の皆さまの明るい視覚をお守りし、 眼に関する不安を少しでも緩和できるよう努めてまいります。 どうぞよろしくお願い致します。">
-    <meta name="keywords" content="レインボー眼科,眼科,久米川,東村山市,栄町,堀川沙紀,結膜炎,角膜炎,ものもらい,白内障,緑内障,ドライアイ,ブドウ膜炎,糖尿病網膜症,網膜剥離,黄斑変性,糖尿病網膜症,眼底出血,網膜裂孔,レーザー治療,メガネ,コンタクトレンズ,定期検査,検査">
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="common/css/basic.css" rel="stylesheet" type="text/css" />
+<link href="common/css/custom2.css" rel="stylesheet" type="text/css" />
+<title>レインボー眼科</title>
+<meta name="description" content="地域の皆さまの明るい視覚をお守りし、 眼に関する不安を少しでも緩和できるよう努めてまいります。 どうぞよろしくお願い致します。">
+<meta name="keywords" content="レインボー眼科,眼科,久米川,東村山市,栄町,堀川沙紀,結膜炎,角膜炎,ものもらい,白内障,緑内障,ドライアイ,ブドウ膜炎,糖尿病網膜症,網膜剥離,黄斑変性,糖尿病網膜症,眼底出血,網膜裂孔,レーザー治療,メガネ,コンタクトレンズ,定期検査,検査">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51117103-1', 'rainbow-ganka.jp');
+  ga('send', 'pageview');
+</script>
+
 </head>
+
 <body>
-    <div class="top-announcement-bar" role="alert" aria-live="assertive">
-        <div class="container">
-            <div class="bar-content">
-                <span class="bar-text"><i class="fas fa-exclamation-triangle"></i> <strong>検査制限：</strong> 3/16(月) 午後17:00まで　｜　4/14(火) 休診　｜　4/24(金) 午前10:30まで　｜　5/29(金) 午前10:30まで　※コンタクト検査受付なしの日あり。詳細はホームページをご確認ください。</span>
-            </div>
-        </div>
-    </div>
-    <header class="site-header">
-        <div class="header-top">
-            <div class="header-info">
-                <div class="header-logo">
-                    <a href="index.html">
-                        <img src="imgs/new_logo.png" alt="レインボー眼科" class="logo-image">
-                    </a>
-                </div>
-                <div class="header-contact">
-                    <div class="contact-details">
-                        <div class="address">
-                            <i class="fas fa-map-marker-alt"></i>
-                            東京都東村山市栄町1-4-26 久米川メディカルビル 5階
-                        </div>
-                        <div class="hours">
-                            <i class="fas fa-clock"></i>
-                            8:30〜12:30/15:00〜17:30
-                        </div>
-                        <p class="closed-days">休診日 土･日･祝及び火・水・金の午後</p>
-                    </div>
-                    <a href="tel:042-398-5331" class="contact-tel">
-                        <p class="tel-text">お電話はこちら</p>
-                        <p class="tel-number">
-                            <i class="fas fa-phone"></i>
-                            042-398-5331
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="container">
-                <button type="button" class="mobile-menu-toggle" aria-label="メニュー" aria-expanded="false">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="index.html">ホーム</a></li>
-                        <li><a href="about.html">診療内容</a></li>
-                        <li><a href="contact-lens.html">コンタクト処方</a></li>
-                        <li class="dropdown">
-                            <button type="button" class="dropbtn">当院のご案内 <i class="fas fa-chevron-down"></i></button>
-                            <div class="dropdown-content">
-                                <a href="rooms.html">医院案内</a>
-                                <a href="doctor.html">院長紹介</a>
-                                <a href="access.html">アクセス</a>
-                            </div>
-                        </li>
-                        <li><a href="faq.html">よくある質問</a></li>
-                        <li><a href="careers.html">採用情報</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<div id="page">
+<div id="page-inner">
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <figure class="hero-photo">
-                    <img src="imgs/banner1.png" alt="レインボー眼科のイメージ" loading="eager">
-                </figure>
-            </div>
-        </section>
+<div id="header">
+<img src="common/img/logo.jpg" alt="レインボー眼科" id="logo" />
+<ul id="menu">
+  <li><a href="index.html"><img src="common/img/menu/m1.jpg" alt="ホーム" /></a></li>
+  <li><a href="subject.html"><img src="common/img/menu/m3.jpg" alt="診療内容" /></a></li>
+  <li><a href="rooms.html"><img src="common/img/menu/m2.jpg" alt="当院のご案内" /></a></li>
+  <li><a href="doctor.html"><img src="common/img/menu/m4.jpg" alt="院長の紹介" /></a></li>
+  <li><a href="access.html"><img src="common/img/menu/m5.jpg" alt="アクセス" /></a></li>
+  <li><a href="faq.html"><img src="common/img/menu/m6.jpg" alt="FAQ" /></a></li>
+</ul>
+</div>
 
-        <section class="announcements" aria-labelledby="important-announcements">
-            <div class="container">
-                <div class="announcement-grid">
-                    <div class="announcement-card">
-                        <div class="announcement-icon">
-                            <i class="fas fa-info-circle"></i>
-                        </div>
-                        <div class="announcement-content">
-                            <h3 id="important-announcements">当院からのお知らせ</h3>
-                            <p><strong>受診時はマイナ保険証または資格確認書をご持参ください。</strong> マイナンバーカードの保険証登録をしていない方は受付のカードリーダーで登録できます。</p>
-                        </div>
-                    </div>
-                    <div class="announcement-card">
-                        <div class="announcement-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="announcement-content">
-                            <h3>診療時間変更のお知らせ</h3>
-                            <ul>
-                                <li>月曜日と木曜日は午前外来の受付終了時間が当日の状況で早まることがあります。ご了承ください。</li>
-                                <li>コンタクトレンズ検査受付時間変更については<a href="contact-lens.html">コンタクトレンズのページ</a>をご覧ください。</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="announcement-card announcement-card--warning">
-                        <div class="announcement-icon">
-                            <i class="fas fa-exclamation-triangle"></i>
-                        </div>
-                        <div class="announcement-content">
-                            <h3>検査制限のお知らせ</h3>
-                            <p>検査員欠員のため、検査などの制限をおこなう日があります。ご来院前にお電話でご確認お願いいたします。ご迷惑をお掛けしますが何卒よろしくお願いします。</p>
-                            <ul>
-                                <li><strong>3月16日(月)</strong>　午後受付17:00まで（コンタクトレンズ検査・処方の受付なし）</li>
-                                <li><strong>4月14日(火)</strong>　<strong>休診</strong></li>
-                                <li><strong>4月24日(金)</strong>　午前受付10:30まで（コンタクトレンズ検査・処方の受付なし）</li>
-                                <li><strong>5月29日(金)</strong>　午前受付10:30まで（コンタクトレンズ検査・処方の受付なし）</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div id="content">
+<div id="header-img">
+<img src="common/img/catch.jpg" width="100%" />
+</div>
+
+<div id="content-main">
+
+<div class="info">
+<div class="info-date">診療時間</div>
+<div class="info-content">
+<table id="timesheet">
+<tr>
+  <th>診療時間</th>
+  <td>月</td>
+  <td>火</td>
+  <td>水</td>
+  <td>木</td>
+  <td>金</td>
+  <td>土</td>
+  <td>日/祝</td>
+</tr>
+<tr>
+  <th>午前 8:30 - 12:30</th>
+  <td class="bit">○</td>
+  <td class="bit">○</td>
+  <td class="bit">○</td>
+  <td class="bit">○</td>
+  <td class="bit">○</td>
+  <td>×</td>
+  <td>×</td>
+</tr>
+<tr>
+  <th>午後 3:00 - 5:30</th>
+  <td class="bit">○</td>
+  <td>×</td>
+  <td>×</td>
+  <td class="bit">○</td>
+  <td>×</td>
+  <td>×</td>
+  <td>×</td>
+</tr>
+</table>
+</div>
+</div>
+
+<br />
+
+<div id="information">
+<h3><img src="common/img/icon/ic1.jpg" /> 当院からのお知らせ<br />　（2026.02.13）<br /></h3>
 
 
-        <section class="clinic-info-section">
-            <div class="container">
-                <div class="clinic-info">
-                    <h1 class="clinic-name">レインボー眼科</h1>
-                    <div class="announcement-card" style="margin-top: 1rem;">
-                        <div class="announcement-icon">
-                            <i class="fas fa-comment-dots"></i>
-                        </div>
-                        <div class="announcement-content">
-                            <h3>院長よりひとこと</h3>
-                            <p>地域の皆さまの明るい視覚をお守りし、眼に関する不安を少しでも緩和できるよう努めてまいりたいと思います。どうぞよろしくお願い致します。</p>
-                        </div>
-                    </div>
-                    <div class="important-notice">
-                        <i class="fas fa-exclamation-circle"></i>
-                        <div class="notice-content">
-                            <h3>受付時間について</h3>
-                            <ul>
-                                <li>☆ 一般受付は診療終了時間10分前まで（午前12:20、午後5:20まで）</li>
-                                <li>☆ 精密眼底検査(散瞳剤使用)は午前10:30、午後4:30までにご来院ください</li>
-                                <li>※ 散瞳後は見えづらくなるため、お車・自転車でのご来院はご遠慮ください</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hours-table">
-                        <h3>診療時間</h3>
-                        <div class="table-responsive">
-                        <table class="opening-hours">
-                            <thead>
-                                <tr>
-                                    <th>診療時間</th>
-                                    <th>月</th>
-                                    <th>火</th>
-                                    <th>水</th>
-                                    <th>木</th>
-                                    <th>金</th>
-                                    <th>土</th>
-                                    <th>日/祝</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>8:30～12:30</th>
-                                    <td><i class="fas fa-circle"></i></td>
-                                    <td><i class="fas fa-circle"></i></td>
-                                    <td><i class="fas fa-circle"></i></td>
-                                    <td><i class="fas fa-circle"></i></td>
-                                    <td><i class="fas fa-circle"></i></td>
-                                    <td><i class="fas fa-times"></i></td>
-                                    <td><i class="fas fa-times"></i></td>
-                                </tr>
-                                <tr>
-                                    <th>15:00～17:30</th>
-                                    <td><i class="fas fa-circle"></i></td>
-                                    <td><i class="fas fa-times"></i></td>
-                                    <td><i class="fas fa-times"></i></td>
-                                    <td><i class="fas fa-circle"></i></td>
-                                    <td><i class="fas fa-times"></i></td>
-                                    <td><i class="fas fa-times"></i></td>
-                                    <td><i class="fas fa-times"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-                        <p class="reception">【受付】午前は8:30〜、午後は15:00〜</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<br />
+&#x1f4cc; <b>受診時はマイナ保険証または資格確認書をご持参ください。</b> <br />
+<br />
 
-    </main>
 
-    <footer>
-        <div class="container">
-            <p>© 2026 レインボー眼科。無断複写・転載を禁じます。</p>
-        </div>
-    </footer>
+<div class="info">
+  <div class="info-date">診療時間変更のお知らせ</div>
+  <div class="info-content">
+  
+  ○ 月曜日と木曜日は午前外来の受付終了時間が当日の状況で早まることがあります。ご了承ください。<br />
+  ○ コンタクトレンズ検査受付時間変更についてはコンタクトレンズのページをご覧ください。<br />
+  <br />
+  検査員欠員のため、検査などの制限をおこなう日があります。ご来院前にお電話でご確認お願いいたします。ご迷惑をお掛けしますが何卒よろしくお願いします。
+  <br />
 
-    <script src="script.js"></script>
+  <br />
+
+
+  ○ <b>2月26日(木) 午後受付17:00まで(コンタクトレンズ検査・処方の受付なし)</b><br />
+  ○ <b>3月16日(月) 午後受付17:00まで(コンタクトレンズ検査・処方の受付なし)</b><br />
+  ○ <b>4月14日(火) 休診</b><br />
+  ○ <b>4月24日(金) 午前受付10:30まで(コンタクトレンズ検査・処方の受付なし)</b><br />
+  ○ <b>5月29日(金) 午前受付10:30まで(コンタクトレンズ検査・処方の受付なし)</b><br />
+
+  <br />
+  
+  </div><!-- info-content -->
+  </div><!-- info -->
+
+<!-- ここから
+<div class="info">
+<div class="info-date">2014.04.20</div>
+<div class="info-content">
+テスト書き込みデータ<br />
+</div>
+</div>
+ここまでが1セット -->
+
+
+
+
+
+
+<div class="info">
+<div class="info-date">受付終了時間について</font></div>
+<div class="info-content">
+
+☆一般受付は診療終了時間10分前、午前は12時20分まで、午後(月・木)は5時20分までとなります。<br />
+
+☆月・木曜午前は受付終了時間が早まることがあります。<br />
+
+☆コンタクトレンズ検査についてはコンタクトレンズのページをご覧ください。<br />
+
+☆精密眼底検査(散瞳剤使用)をご希望の方は午前は10時30分、午後は4時30分までにご来院ください。お時間がかかること、検査後もしばらくぼやけることをご了承願います。自らの運転(自動車、バイク、自転車など)でのご来院はご遠慮ください。<br />
+
+
+
+<br />
+
+</div><!-- info-content -->
+</div><!-- info -->
+
+
+
+
+
+</div><!-- info-content -->
+</div><!-- information -->
+
+
+<div id="content-side">
+
+<div id="messages">
+<h4><img src="common/img/icon/ic3.jpg" /> 院長よりひとこと</h4>
+地域の皆さまの明るい視覚をお守りし、
+眼に関する不安を少しでも緩和できるよう努めてまいりたいと思います。
+どうぞよろしくお願い致します。
+</div>
+
+<div id="about">
+<h4><img src="common/img/icon/ic2.jpg" /> 当院について</h4>
+<div class="about">
+<div class="about-header">住所 :</div>
+<div class="about-content">
+東京都東村山市栄町1-4-26<br />
+久米川メディカルビル 5 階<br />
+</div>
+</div>
+<div class="about">
+<div class="about-header">TEL :</div>
+<div class="about-content">
+042-398-5331<br />
+</div>
+</div>
+<div class="about">
+<div class="about-header">最寄駅 :</div>
+<div class="about-content">
+西武新宿線 久米川駅北口 徒歩1分<br />
+</div>
+</div>
+<div class="about">
+<div class="about-header">診療時間 :</div>
+<div class="about-content">
+午前 8 : 30 ～ 12 : 30<br />
+午後 3 : 00 ～ 5 : 30<br />
+</div>
+</div>
+<div class="about">
+<div class="about-header">休診日 :</div>
+<div class="about-content">
+土・日・祝日　及び<br />
+火曜午後・水曜午後・金曜午後<br />
+</div>
+</div>
+
+
+<!-- 枠固定用 -->
+<div class="fcl"></div>
+<!-- 枠固定用 ここまで -->
+
+
+</div>
+
+
+<div id="messages">
+  <h4><img src="common/img/icon/ic1.jpg" /> 求人 :</h4>
+  一緒に働いてくださる方募集中<br />
+  詳細は電話でお問い合わせください<br />
+</div>
+
+
+</div>
+</div>
+
+
+
+<div id="footer">
+<div id="footer-copyright">
+Copyright© 2014 RAINBOW-GANKA CLINIC All Rights Reserved.
+</div>
+<div id="footer-main">
+<ul id="menu-list">
+  <li><a href="index.html">ホーム</a></li>
+  <li><a href="subject.html">診療内容</a></li>
+  <li><a href="rooms.html">当院のご案内</a></li>
+  <li><a href="doctor.html">院長の紹介</a></li>
+  <li><a href="access.html">アクセス</a></li>
+  <li><a href="faq.html">コンタクトレンズ</a></li>
+</ul>
+<div class="fcl" id="footer-end">
+<b>レインボー眼科</b><br />
+<h5>お問い合わせは 042-398-5331</h5>
+</div>
+</div>
+<div class="fcl">
+</div>
+</div>
+
+</div>
+</div>
+
 </body>
-</html> 
+</html>

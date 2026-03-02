@@ -1,0 +1,16 @@
+#page{
+	width: 950px;
+}
+
+#logo, #menu img{
+	height: 85px;
+	width: auto;
+}
+
+#header-img{
+	margin-bottom: 5px;
+}
+
+body {
+	font-size: 14px;
+}

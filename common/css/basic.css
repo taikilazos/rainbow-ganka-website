@@ -1,0 +1,307 @@
+@charset "utf-8";
+* {
+	color: #000000;
+	line-height: 20px;
+	padding:0;
+	margin: 0;
+	font-family: Verdana, Arial, Meiryo, "メイリオ",
+		 "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3",
+			Osaka, "MS P Gothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+body {
+	color:#555;
+	font-size: 13px;
+	text-align:center;
+	background-color: #EEF;
+}
+img {
+	vertical-align: top;
+}
+a{outline:none;}
+a img {
+	outline:none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:hover img {
+	filter: Alpha(opacity=70);
+	opacity: 0.8; /*firefox safari*/
+}
+#page{
+	margin: 0 0 0 0;
+	width: 1050px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+#header {
+	padding: 10px 25px 0 25px;
+	clear : both;
+}
+
+#logo {
+	float: left;
+}
+
+#menu {
+	margin: 0;
+	padding: 0;
+}
+#menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	color: #222;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-weight: bold;
+	background: #eee;
+}
+#menu a {
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	color: #222;
+	display:block;
+}
+#menu li:hover {
+	color: #fff;
+	background: #999;
+}
+
+#content {
+	text-align:left;
+	padding: 10px 25px 0 25px;
+	clear : both;
+/*	border : 1px black solid;*/
+}
+
+#content-main {
+	padding: 0 5px 0 0;
+	float: left;
+	width: 585px;
+}
+
+#information {
+	padding: 10px 0 15px 0;
+}
+
+#content-side {
+	margin: 0 0 14px 0;
+	width: 305px;
+	float: right;
+}
+
+#messages {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FCC;
+	padding: 10px;
+	background: #fee;
+}
+#about {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FCC;
+	margin: 7px 0 8px 0;
+	padding: 10px;
+	background: #fee;
+}
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+h3 img {
+	padding: 5px 3px 0 0;
+}
+h4 {
+	padding: 0 0 5px 2px;
+	margin: 0 0 3px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+h4 img {
+	padding: 5px 3px 0 0;
+}
+h5 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#footer {
+	padding: 5px 25px 10px 25px;
+	clear : both;
+	background: #DDD;
+}
+#footer-copyright {
+	float: left;
+}
+#footer-main {
+	float: right;
+	text-align:right;
+}
+#footer-end {
+	padding: 7px 0 0 0;
+	text-align:right;
+}
+#menu-list {
+	margin: 0;
+	padding: 0;
+}
+#menu-list ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu-list li {
+	color: #222;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0 7px 0 7px;
+	border: none;
+	font-weight: bold;
+	background: #DDD;
+}
+#menu-list a {
+	border: none;
+	text-align:center;
+	text-decoration: none;
+	color: #222;
+	display:block;
+}
+#menu-list li:hover {
+	color: #fff;
+	background: #999;
+}
+.fcl {
+	clear : both;
+}
+
+.info {
+	clear: both;
+	padding: 7px 0 0 0;
+}
+.info-date {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	margin: 0 0 8px 0;
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-left-color: #999;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #AAA;
+	width: 300px;
+}
+.info-content {
+	padding: 0 0 5px 0;
+}
+
+#doctor{
+	float: left;
+	padding: 0 0 0 10px;
+}
+#doctor-info{
+	float: right;
+	width: 600px;
+}
+
+#timesheet  {
+	background: #777;
+}
+#timesheet td {
+	padding: 2px 5px 2px 5px;
+	text-align:center;
+	width:40px;
+	background: #FFF;
+}
+#timesheet td.bit {
+	font-size: large;
+}
+#timesheet th {
+	padding: 2px 5px 2px 5px;
+	width:160px;
+	background: #FFF;
+}
+
+#subject-img{
+	float: right;
+	padding: 0 20px 0 0;
+}
+#subject-main{
+	float: left;
+}
+
+#rooms-left{
+	float: left;
+	padding: 5px 40px 5px 5px;
+}
+#rooms-mid{
+	float: left;
+	padding: 5px 40px 5px 5px;
+}
+
+th {
+	text-decoration: none;
+	text-align:center;
+	font-weight: normal;
+}
+
+.about{
+	padding: 2px 0 0 0;
+	clear: both;
+}
+.about-header{
+	width: 66px;
+	text-align: right;
+	float: left;
+}
+.about-content{
+	width: 204px;
+	float: right;
+}
+.notice{
+	padding: 2px 0 0 0;
+	clear: both;
+}
+.notice-mark{
+	width: 12px;
+	text-align: right;
+	float: left;
+}
+.notice-content{
+	width: 266px;
+	float: right;
+}
+.history{
+	padding: 2px 0 0 0;
+	clear: both;
+}
+.history-year{
+	width: 100px;
+	float: left;
+}
+.history-content{
+	width: 490px;
+	float: right;
+}
