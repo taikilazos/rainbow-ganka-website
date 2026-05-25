@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($file = \"c:\\\\Users\\\\taiki\\\\Documents\\\\GitHub\\\\rainbow-ganka-website\\\\new_design\\\\contact-lens.html\"; $content = Get-Content $file -Raw -Encoding UTF8; $content = $content.Replace\\(\"8:30〜12:30/15:00〜17:30\", \"8:20〜12:30/14:50〜17:30\"\\); Set-Content $file -Value $content -Encoding UTF8 -NoNewline)",
+      "PowerShell($path = \"c:\\\\Users\\\\taiki\\\\Documents\\\\GitHub\\\\rainbow-ganka-website\\\\index.html\"; $bytes = [System.IO.File]::ReadAllBytes\\($path\\); $enc = [System.Text.Encoding]::GetEncoding\\(\"shift_jis\"\\); $content = $enc.GetString\\($bytes\\); $lines = $content -split \"`r`n\"; for \\($i = 95; $i -lt 105; $i++\\) { Write-Output \"Line $\\($i+1\\): [$\\($lines[$i].Replace\\(\"`t\", '<TAB>'\\)\\)]\" })",
+      "PowerShell($path = \"c:\\\\Users\\\\taiki\\\\Documents\\\\GitHub\\\\rainbow-ganka-website\\\\index.html\"; $content = [System.IO.File]::ReadAllText\\($path, [System.Text.Encoding]::UTF8\\); $lines = $content -split '\\\\r?\\\\n'; for \\($i = 95; $i -lt [Math]::Min\\(105, $lines.Count\\); $i++\\) { $line = $lines[$i] -replace '\\\\t', '<TAB>'; Write-Output \"$\\($i+1\\): $line\" })",
+      "PowerShell($path = \"c:\\\\Users\\\\taiki\\\\Documents\\\\GitHub\\\\rainbow-ganka-website\\\\index.html\"; $lines = [System.IO.File]::ReadAllLines\\($path, [System.Text.Encoding]::UTF8\\); Write-Output \"Total lines: $\\($lines.Count\\)\"; Write-Output \"Line 97: [$\\($lines[96]\\)]\"; Write-Output \"Line 98: [$\\($lines[97]\\)]\"; Write-Output \"Line 99: [$\\($lines[98]\\)]\"; Write-Output \"Line 100: [$\\($lines[99]\\)]\")"
+    ]
+  }
+}
