@@ -32,6 +32,9 @@ Migrated from paid hosting (スターサーバフリー + お名前.com managed 
 - Content is in Japanese; keep all user-facing text in Japanese
 - No build process — edit HTML/CSS/JS directly and push to `main` to deploy
 - Images go in `imgs/`
+- When updating dated announcements or closure notices, first get the current date.
+  Remove only entries whose entire date range has already passed; keep any current
+  or upcoming dates, including mixed lists where one old item is being replaced.
 
 ## DNS & Hosting
 - GitHub Pages A records: 185.199.108.153, .109, .110, .111
