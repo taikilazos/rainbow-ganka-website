@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コンタクトレンズ処方 - レインボー眼科</title>
     <meta name="description" content="レインボー眼科のコンタクトレンズ処方案内ページです。初めての方からリピーターの方まで、安全で快適なコンタクトレンズライフをサポートいたします。">
+    <link rel="canonical" href="https://rainbow-ganka.com/contact-lens.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="レインボー眼科">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:title" content="コンタクトレンズ処方 - レインボー眼科">
+    <meta property="og:description" content="レインボー眼科のコンタクトレンズ処方案内ページです。初めての方からリピーターの方まで、安全で快適なコンタクトレンズライフをサポートいたします。">
+    <meta property="og:url" content="https://rainbow-ganka.com/contact-lens.html">
+    <meta property="og:image" content="https://rainbow-ganka.com/imgs/ogp.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="imgs/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="top-announcement-bar" role="alert" aria-live="assertive">
-        <div class="container">
-            <div class="bar-content">
-                <span class="bar-text"><i class="fas fa-exclamation-triangle"></i> <strong>【7/6(月)・7/13(月) 午後受付終了4:30まで】</strong> 7/6(月) コンタクトレンズ検査受付なし　｜　7/13(月) コンタクトレンズ検査は過去1年以内に当院でコンタクトレンズ処方箋発行されている方のみ受付します。</span>
-            </div>
-        </div>
-    </div>
+    <script src="announcements.js"></script>
     <header class="site-header">
         <div class="header-top">
             <div class="header-info">
                 <div class="header-logo">
                     <a href="index.html">
-                        <img src="imgs/new_logo.png" alt="レインボー眼科" class="logo-image">
+                        <img src="imgs/new_logo.png" alt="レインボー眼科" class="logo-image" width="800" height="267">
                     </a>
                 </div>
                 <div class="header-contact">
@@ -126,8 +131,7 @@
                     <p class="notice">
                         ◯＝受付可　△＝条件付き（第一月曜午後は受付なし）　✕＝受付なし<br>
                         ※月・木曜午前は受付終了時間が早まることがあります。<br>
-                        ※7月6日(月)は午後受付終了4:30まで、コンタクトレンズ検査受付はありません。<br>
-                        ※7月13日(月)は午後受付終了4:30まで、コンタクトレンズ検査は過去1年以内に当院でコンタクトレンズ処方箋発行されている方のみ受付します。<br>
+                        <span id="lens-notices"></span>
                     </p>
                 </div>
 
